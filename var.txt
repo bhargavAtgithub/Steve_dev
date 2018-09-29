@@ -1,0 +1,1 @@
+Window (main window, 250 x 400 px size)
