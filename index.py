@@ -24,5 +24,16 @@ import tkinter as tk
 Window = tk.Tk()
 Window.title("Steve")
 Window.geometry("250x400")
+Window.configure(bg = "#23223e")
+Window.resizable(0,0)
+SteveOP = tk.Text(master = Window,width = 28,height = 10,bg = "#c4c1ea",highlightbackground = "#14182b",highlightthickness = 3)
+SteveOP.grid(pady=10, padx= 7,columnspan = 2)
+SteveOP.configure(state="disabled")
+UserIP = tk.Entry(Window,width = 28, bg = "#c1e1de",highlightbackground = "#14182b", highlightthickness = 3)
+UserIP.grid(padx = 5 ,pady = 10)
+ImgBtn = tk.PhotoImage(file = "Untitled-1.png")
+UserSend = tk.Button(Window,image = ImgBtn, width = 15, height = 15)
+UserSend.grid(row = 1, column = 1)
+
 
 Window.mainloop()

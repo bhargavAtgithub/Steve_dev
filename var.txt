@@ -1,1 +1,3 @@
 Window (main window, 250 x 400 px size)
+UserIP (this will store the input from the user)
+SteveOP (Steves Output)
