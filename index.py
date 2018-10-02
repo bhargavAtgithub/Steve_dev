@@ -18,22 +18,41 @@ Variable -Lower CamelCase. But the intent of the usage of the variable should be
 Reference for the above conventions - https://en.wikipedia.org/wiki/Naming_convention_(programming)
 """
 
-
 import tkinter as tk
+import requests as req
 
 Window = tk.Tk()
 Window.title("Steve")
 Window.geometry("250x400")
 Window.configure(bg = "#23223e")
 Window.resizable(0,0)
-SteveOP = tk.Text(master = Window,width = 28,height = 10,bg = "#c4c1ea",highlightbackground = "#14182b",highlightthickness = 3)
+
+def displayOnSteve(Data):
+    SteveOP.configure(state="normal")
+    SteveOP.delete('1.0',tk.END)
+    SteveOP.insert(tk.END,"%s\n"%Data)
+    SteveOP.configure(state = "disabled")
+
+def weatherReq():
+    WeatherResponse = req.get("http://api.openweathermap.org/data/2.5/forecast?q=Jalandhar,IND&appid=6c844c5bb5c65e8ec55ab4cf702b96cb")
+    displayOnSteve(WeatherResponse.content)
+
+def userEntry():
+    UserIP = UserIPBox.get()
+    if(UserIP == "Weather today"):
+        weatherReq()
+    else:
+        displayOnSteve("Counld'nt find the data. There is something wrong")
+
+SteveOP = tk.Text(master = Window, width = 28, height = 10,bg = "#c4c1ea", fg = "black" ,highlightbackground = "#14182b",highlightthickness = 3)
 SteveOP.grid(pady=10, padx= 7,columnspan = 2)
 SteveOP.configure(state="disabled")
-UserIP = tk.Entry(Window,width = 28, bg = "#c1e1de",highlightbackground = "#14182b", highlightthickness = 3)
-UserIP.grid(padx = 5 ,pady = 10)
-ImgBtn = tk.PhotoImage(file = "Untitled-1.png")
-UserSend = tk.Button(Window,image = ImgBtn, width = 15, height = 15)
-UserSend.grid(row = 1, column = 1)
 
+UserIPBox = tk.Entry(Window, width = 28, bg = "#c1e1de",highlightbackground = "#14182b", highlightthickness = 3)
+UserIPBox.grid(padx = 5 ,pady = 10)
+
+ImgBtn = tk.PhotoImage(file = "speak.png")
+
+tk.Button(Window,image = ImgBtn, width = 20, height = 20, bg = "#23223e", borderwidth = 0, activebackground = "#23223e", command = userEntry).grid(row = 1, column = 1)
 
 Window.mainloop()
