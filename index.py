@@ -18,9 +18,11 @@ Variable -Lower CamelCase. But the intent of the usage of the variable should be
 Reference for the above conventions - https://en.wikipedia.org/wiki/Naming_convention_(programming)
 """
 
+import sqlite3
 import tkinter as tk
 import requests as req
 
+#UI
 Window = tk.Tk()
 Window.title("Steve")
 Window.geometry("250x400")
@@ -38,11 +40,8 @@ def weatherReq():
     displayOnSteve(WeatherResponse.content)
 
 def userEntry():
-    UserIP = UserIPBox.get()
-    if(UserIP == "Weather today"):
-        weatherReq()
-    else:
-        displayOnSteve("Counld'nt find the data. There is something wrong")
+    userip = UserIPBox.get()
+    return userip
 
 SteveOP = tk.Text(master = Window, width = 28, height = 10,bg = "#c4c1ea", fg = "black" ,highlightbackground = "#14182b",highlightthickness = 3)
 SteveOP.grid(pady=10, padx= 7,columnspan = 2)
@@ -52,7 +51,31 @@ UserIPBox = tk.Entry(Window, width = 28, bg = "#c1e1de",highlightbackground = "#
 UserIPBox.grid(padx = 5 ,pady = 10)
 
 ImgBtn = tk.PhotoImage(file = "speak.png")
+UserEntry = tk.Button(Window ,image = ImgBtn, width = 20, height = 20, bg = "#23223e", borderwidth = 0, activebackground = "#23223e", command = userEntry).grid(row = 1, column = 1)
 
-tk.Button(Window,image = ImgBtn, width = 20, height = 20, bg = "#23223e", borderwidth = 0, activebackground = "#23223e", command = userEntry).grid(row = 1, column = 1)
 
+# Module 0.1 - Database
+
+def userInfoDB():
+    username = UserName.get()
+    email = UserMail.get()
+    usercontact = UserContact.get()
+    UserInfo = sqlite3.connect("UserBasic.db")
+    UserInfo.execute("insert into UserBasic values( %s,%s, %s)", username, email, usercontact)
+
+#Module 1.1-Greetings and User Recognition
+
+class OnStart:
+    def __init__(self):
+        self.user_recog = sqlite3.connect("UserRecog.db")
+        self.user_basic = sqlite3.connect("UserBasic.db")
+        self.greeting = self.user_recog.execute("SELECT RecogQue FROM UserRecog ORDER BY RANDOM() LIMIT 1;")
+        for column in self.greeting:
+            displayOnSteve(column[0])
+        self.user_name = userEntry()
+        self.user_find = self.user_basic.execute("SELECT UserName FROM UserBasic;")
+        for column in self.user_find:
+            if column[0] != self.user_name:
+                displayOnSteve("Sry, Your name is'nt in my database. Do you want to register?")
+OnStart_ = OnStart()
 Window.mainloop()
