@@ -39,9 +39,9 @@ def weatherReq():
     WeatherResponse = req.get("http://api.openweathermap.org/data/2.5/forecast?q=Jalandhar,IND&appid=6c844c5bb5c65e8ec55ab4cf702b96cb")
     displayOnSteve(WeatherResponse.content)
 
+
 def userEntry():
     userip = UserIPBox.get()
-    return userip
 
 SteveOP = tk.Text(master = Window, width = 28, height = 10,bg = "#c4c1ea", fg = "black" ,highlightbackground = "#14182b",highlightthickness = 3)
 SteveOP.grid(pady=10, padx= 7,columnspan = 2)
@@ -53,7 +53,6 @@ UserIPBox.grid(padx = 5 ,pady = 10)
 ImgBtn = tk.PhotoImage(file = "speak.png")
 UserEntry = tk.Button(Window ,image = ImgBtn, width = 20, height = 20, bg = "#23223e", borderwidth = 0, activebackground = "#23223e", command = userEntry).grid(row = 1, column = 1)
 
-
 # Module 0.1 - Database
 
 def userInfoDB():
@@ -64,16 +63,18 @@ def userInfoDB():
     UserInfo.execute("insert into UserBasic values( %s,%s, %s)", username, email, usercontact)
 
 #Module 1.1-Greetings and User Recognition
+   ' '
 
 class OnStart:
     def __init__(self):
-        self.user_recog = sqlite3.connect("UserRecog.db")
-        self.user_basic = sqlite3.connect("UserBasic.db")
-        self.greeting = self.user_recog.execute("SELECT RecogQue FROM UserRecog ORDER BY RANDOM() LIMIT 1;")
+        self.user_recog = sqlite3.connect("StevesBrain.db")
+        self.greeting = self.user_recog.execute("SELECT OnStart FROM UserRecog ORDER BY RANDOM() LIMIT 1;")
         for column in self.greeting:
             displayOnSteve(column[0])
-        self.user_name = userEntry()
-        self.user_find = self.user_basic.execute("SELECT UserName FROM UserBasic;")
+        global userip
+        self.user_name = userip
+        print(self.user_name)
+        self.user_find = self.user_recog.execute("SELECT UserName FROM UserBasic;")
         for column in self.user_find:
             if column[0] != self.user_name:
                 displayOnSteve("Sry, Your name is'nt in my database. Do you want to register?")
