@@ -63,7 +63,7 @@ def userInfoDB():
     UserInfo.execute("insert into UserBasic values( %s,%s, %s)", username, email, usercontact)
 
 #Module 1.1-Greetings and User Recognition
-   ' '
+
 
 class OnStart:
     def __init__(self):

@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9e2bb570-0bb8-4fb5-9be5-5e4d740dd196" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserBasic.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserRecog.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +15,7 @@
     <session id="1856989897">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.17" value="2" />
@@ -47,14 +45,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4281" />
+          <entry key="py" value="4283" />
           <entry key="txt" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="107" />
-          <entry key="Python" value="4281" />
+          <entry key="Python" value="4283" />
         </counts>
       </usages-collector>
     </session>
@@ -64,12 +62,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+            <state relative-caret-position="182">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
-                <marker date="1539433954881" expanded="true" signature="1595:1596" ph="..." />
-                <marker date="1539433954881" expanded="true" signature="2528:2529" ph="..." />
-                <marker date="1539433954881" expanded="true" signature="2543:3157" ph="..." />
+                <marker date="1539438425188" expanded="true" signature="1595:1596" ph="..." />
+                <marker date="1539438425188" expanded="true" signature="2522:2523" ph="..." />
+                <marker date="1539438425188" expanded="true" signature="2537:3151" ph="..." />
               </folding>
             </state>
           </provider>
@@ -268,7 +266,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23139158" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23139158" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39805827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -296,12 +294,12 @@
     <entry file="file://$PROJECT_DIR$/g_search.py" />
     <entry file="file://$PROJECT_DIR$/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+        <state relative-caret-position="182">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
-            <marker date="1539433954881" expanded="true" signature="1595:1596" ph="..." />
-            <marker date="1539433954881" expanded="true" signature="2528:2529" ph="..." />
-            <marker date="1539433954881" expanded="true" signature="2543:3157" ph="..." />
+            <marker date="1539438425188" expanded="true" signature="1595:1596" ph="..." />
+            <marker date="1539438425188" expanded="true" signature="2522:2523" ph="..." />
+            <marker date="1539438425188" expanded="true" signature="2537:3151" ph="..." />
           </folding>
         </state>
       </provider>
