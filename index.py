@@ -21,18 +21,16 @@ Reference for the above conventions - https://en.wikipedia.org/wiki/Naming_conve
 import sqlite3
 import tkinter as tk
 import requests as req
+import time
+import sys
+import tkinter.messagebox as tm
 
-#UI
-Window = tk.Tk()
-Window.title("Steve")
-Window.geometry("250x400")
-Window.configure(bg = "#23223e")
-Window.resizable(0,0)
+#global variables
 
 def displayOnSteve(Data):
-    SteveOP.configure(state="normal")
+    SteveOP.configure(state = "normal")
     SteveOP.delete('1.0',tk.END)
-    SteveOP.insert(tk.END,"%s\n"%Data)
+    SteveOP.insert(tk.END,"%s"%Data)
     SteveOP.configure(state = "disabled")
 
 def weatherReq():
@@ -41,7 +39,17 @@ def weatherReq():
 
 
 def userEntry():
-    userip = UserIPBox.get()
+    userDiag = UserIPBox.get()
+    diagFilter(userDiag)
+
+#loginFrame
+
+#mainFrame
+Window = tk.Tk()
+Window.title("Steve")
+Window.geometry("250x400")
+Window.configure(bg = "#23223e")
+Window.resizable(0,0)
 
 SteveOP = tk.Text(master = Window, width = 28, height = 10,bg = "#c4c1ea", fg = "black" ,highlightbackground = "#14182b",highlightthickness = 3)
 SteveOP.grid(pady=10, padx= 7,columnspan = 2)
@@ -55,28 +63,43 @@ UserEntry = tk.Button(Window ,image = ImgBtn, width = 20, height = 20, bg = "#23
 
 # Module 0.1 - Database
 
+dbConnect = sqlite3.connect("StevesBrain.db")
+
 def userInfoDB():
     username = UserName.get()
     email = UserMail.get()
     usercontact = UserContact.get()
-    UserInfo = sqlite3.connect("UserBasic.db")
-    UserInfo.execute("insert into UserBasic values( %s,%s, %s)", username, email, usercontact)
+    dbConnect.execute("insert into UserBasic values( %s,%s, %s)", username, email, usercontact)
 
 #Module 1.1-Greetings and User Recognition
+uValid = 0
+
+def userValidation(userDiag):
+    expIP = userDiag
+    global uValid
+    regUsers = dbConnect.execute("SELECT UserName FROM UserBasic;")
+    for col in regUsers:
+        if(expIP == col[0]):
+            displayOnSteve("Welcome back %s"%expIP)
+            uValid = 1
+            time.sleep(1)
+            break
+        else:
+            uValid = 0
+            displayOnSteve("Probably this is your first time. Please register to chat :)")
+
+def diagFilter(userDiag):
+    global uValid
+    if(uValid == 0):
+        userValidation(userDiag)
 
 
-class OnStart:
+
+class OnStart(object):
     def __init__(self):
-        self.user_recog = sqlite3.connect("StevesBrain.db")
-        self.greeting = self.user_recog.execute("SELECT OnStart FROM UserRecog ORDER BY RANDOM() LIMIT 1;")
-        for column in self.greeting:
+        greeting = dbConnect.execute("SELECT OnStart FROM UserRecog ORDER BY RANDOM() LIMIT 1;")
+        for column in greeting:
             displayOnSteve(column[0])
-        global userip
-        self.user_name = userip
-        print(self.user_name)
-        self.user_find = self.user_recog.execute("SELECT UserName FROM UserBasic;")
-        for column in self.user_find:
-            if column[0] != self.user_name:
-                displayOnSteve("Sry, Your name is'nt in my database. Do you want to register?")
-OnStart_ = OnStart()
+
+onStart= OnStart()
 Window.mainloop()

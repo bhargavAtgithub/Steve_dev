@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bb570-0bb8-4fb5-9be5-5e4d740dd196" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StevesBrain.db" beforeDir="false" afterPath="$PROJECT_DIR$/StevesBrain.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,9 +24,10 @@
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -45,14 +46,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4283" />
+          <entry key="py" value="5735" />
           <entry key="txt" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="107" />
-          <entry key="Python" value="4283" />
+          <entry key="Python" value="5735" />
         </counts>
       </usages-collector>
     </session>
@@ -62,12 +63,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="102">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               <folding>
-                <marker date="1539438425188" expanded="true" signature="1595:1596" ph="..." />
-                <marker date="1539438425188" expanded="true" signature="2522:2523" ph="..." />
-                <marker date="1539438425188" expanded="true" signature="2537:3151" ph="..." />
+                <element signature="e#984#998#0" expanded="true" />
+                <marker date="1539566517624" expanded="true" signature="1716:1717" ph="..." />
+                <marker date="1539566517624" expanded="true" signature="2655:3093" ph="..." />
+                <marker date="1539566517624" expanded="true" signature="3217:3222" ph="..." />
+                <marker date="1539566517624" expanded="true" signature="3217:3410" ph="..." />
+                <marker date="1539566517624" expanded="true" signature="3428:3429" ph="..." />
               </folding>
             </state>
           </provider>
@@ -104,17 +108,16 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-7" />
     <option name="width" value="697" />
-    <option name="height" value="775" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,6 +129,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,14 +263,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13392857" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23139158" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23139158" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39805827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -294,12 +297,15 @@
     <entry file="file://$PROJECT_DIR$/g_search.py" />
     <entry file="file://$PROJECT_DIR$/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="102">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
           <folding>
-            <marker date="1539438425188" expanded="true" signature="1595:1596" ph="..." />
-            <marker date="1539438425188" expanded="true" signature="2522:2523" ph="..." />
-            <marker date="1539438425188" expanded="true" signature="2537:3151" ph="..." />
+            <element signature="e#984#998#0" expanded="true" />
+            <marker date="1539566517624" expanded="true" signature="1716:1717" ph="..." />
+            <marker date="1539566517624" expanded="true" signature="2655:3093" ph="..." />
+            <marker date="1539566517624" expanded="true" signature="3217:3222" ph="..." />
+            <marker date="1539566517624" expanded="true" signature="3217:3410" ph="..." />
+            <marker date="1539566517624" expanded="true" signature="3428:3429" ph="..." />
           </folding>
         </state>
       </provider>
