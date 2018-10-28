@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bb570-0bb8-4fb5-9be5-5e4d740dd196" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Steve.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Steve.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StevesBrain.db" beforeDir="false" afterPath="$PROJECT_DIR$/StevesBrain.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,21 +61,61 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1549636875">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="5640" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="5640" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="1043">
+              <caret line="185" column="17" selection-start-line="185" selection-start-column="17" selection-end-line="185" selection-end-column="17" />
               <folding>
-                <element signature="e#984#998#0" expanded="true" />
-                <marker date="1539566517624" expanded="true" signature="1716:1717" ph="..." />
-                <marker date="1539566517624" expanded="true" signature="2655:3093" ph="..." />
-                <marker date="1539566517624" expanded="true" signature="3217:3222" ph="..." />
-                <marker date="1539566517624" expanded="true" signature="3217:3410" ph="..." />
-                <marker date="1539566517624" expanded="true" signature="3428:3429" ph="..." />
+                <element signature="e#980#994#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BugClearence.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="78" column="18" selection-end-line="185" selection-end-column="17" />
+              <folding>
+                <element signature="e#980#994#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,13 +148,14 @@
         <option value="$PROJECT_DIR$/example.py" />
         <option value="$PROJECT_DIR$/g_search.py" />
         <option value="$PROJECT_DIR$/var.txt" />
+        <option value="$PROJECT_DIR$/BugClearence.py" />
         <option value="$PROJECT_DIR$/index.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="697" />
+    <option name="width" value="1004" />
     <option name="height" value="743" />
   </component>
   <component name="ProjectView">
@@ -118,6 +163,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,7 +175,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,7 +194,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.index">
-    <configuration name="example" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="BugClearence" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Steve" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -161,7 +206,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/example.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BugClearence.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -212,7 +257,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_search" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Steve" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -220,11 +265,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Google-Search-Chatbot-master" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Sage-master" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Google-Search-Chatbot-master/test_search.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Sage-master/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="python_gui_reminder_app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Steve" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python-gui-reminder-app-master" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python-gui-reminder-app-master/python_gui_reminder_app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -235,16 +301,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.index" />
-      <item itemvalue="Python.example" />
-      <item itemvalue="Python.test_search" />
       <item itemvalue="Python.g_search" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.python_gui_reminder_app" />
+      <item itemvalue="Python.BugClearence" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.index" />
+        <item itemvalue="Python.BugClearence" />
+        <item itemvalue="Python.python_gui_reminder_app" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.g_search" />
-        <item itemvalue="Python.test_search" />
-        <item itemvalue="Python.example" />
       </list>
     </recent_temporary>
   </component>
@@ -264,17 +332,17 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0625" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.030505951" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23139158" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.1699029" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39805827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32847896" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32847896" />
@@ -295,17 +363,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_search.py" />
     <entry file="file://$PROJECT_DIR$/g_search.py" />
-    <entry file="file://$PROJECT_DIR$/index.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="-258">
+          <caret line="1704" selection-start-line="1704" selection-end-line="1704" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sage-master/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="57" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python-gui-reminder-app-master/python_gui_reminder_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
           <folding>
-            <element signature="e#984#998#0" expanded="true" />
-            <marker date="1539566517624" expanded="true" signature="1716:1717" ph="..." />
-            <marker date="1539566517624" expanded="true" signature="2655:3093" ph="..." />
-            <marker date="1539566517624" expanded="true" signature="3217:3222" ph="..." />
-            <marker date="1539566517624" expanded="true" signature="3217:3410" ph="..." />
-            <marker date="1539566517624" expanded="true" signature="3428:3429" ph="..." />
+            <element signature="e#295#317#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -314,6 +391,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BugClearence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="78" column="18" selection-end-line="185" selection-end-column="17" />
+          <folding>
+            <element signature="e#980#994#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1043">
+          <caret line="185" column="17" selection-start-line="185" selection-start-column="17" selection-end-line="185" selection-end-column="17" />
+          <folding>
+            <element signature="e#980#994#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
