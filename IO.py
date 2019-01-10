@@ -1,0 +1,4 @@
+global ip
+global op
+
+
